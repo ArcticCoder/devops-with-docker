@@ -1,0 +1,10 @@
+Image sizes:
+Ubuntu - 83MB
+Alpine - 15.7MB
+
+[devops@devops part1]$ docker run -d -it devopsdockeruh/simple-web-service:alpine
+[devops@devops part1]$ docker exec -it modest_curie sh
+/usr/src/app # tail -f text.log
+2023-03-13 11:54:03 +0000 UTC
+2023-03-13 11:54:05 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy' 
