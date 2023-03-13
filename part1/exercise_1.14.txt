@@ -1,0 +1,24 @@
+Commands used:
+docker run --rm -it -p 5000:5000 example-frontend:1.14
+docker run --rm -it -p 8080:8080 example-backend:1.14
+
+Dockerfile for frontend:
+FROM node:16.19
+EXPOSE 5000
+WORKDIR /usr/src/app
+COPY package*.json ./
+COPY . .
+ENV REACT_APP_BACKEND_URL=http://devops:8080
+RUN npm install && npm run build
+RUN npm install -g serve
+CMD ["serve", "-s", "-l", "5000", "build"]
+
+
+Dockerfile for backend:
+FROM golang:1.16
+EXPOSE 8080
+WORKDIR /usr/src/app
+COPY . .
+ENV REQUEST_ORIGIN=http://devops:5000
+RUN go build
+CMD ["./server"] 

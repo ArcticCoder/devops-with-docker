@@ -1,0 +1,8 @@
+Command used:
+
+[devops@devops part1]$ docker run --rm -p 8080:8080 web-server
+
+
+I then connected to http://devops:8080/ with Firefox from another machine and received:
+
+{"message":"You connected to the following path: /","path":"/"}
