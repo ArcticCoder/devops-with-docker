@@ -1,0 +1,5 @@
+GitHub repository with README etc.:
+https://github.com/ArcticCoder/dockerhub-demo
+
+Dockerhub page:
+https://hub.docker.com/r/arcticcoder/dockerhub-demo
