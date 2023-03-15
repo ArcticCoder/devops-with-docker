@@ -1,0 +1,3 @@
+I changed REQUEST_ORIGIN in the backend from http://devops:5000 to http://devops/ and BACKEND_URL from http://devops:8080 to http://devops/api.
+
+I alson updated the image versions in docker-compose.yml to match the new images.

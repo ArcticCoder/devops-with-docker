@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15.2-alpine
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    container_name: db
+    volumes:
+      - ./data:/var/lib/postgresql/data
+
+  backend:
+    image: example-backend:1.14
+    environment:
+      - REDIS_HOST=cache
+      - POSTGRES_HOST=db
+      - POSTGRES_PASSWORD=postgres
+    container_name: back
+    depends_on:
+      - db
+
+  frontend:
+    image: example-frontend:1.14
+    container_name: front 
+
+  redis:
+    image: redis:7.0.9
+    container_name: cache
+
+  proxy:
+    image: nginx:1.23.3
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 80:80
+    depends_on:
+      - backend
+      - frontend

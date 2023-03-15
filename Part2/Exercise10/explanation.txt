@@ -1,0 +1,1 @@
+I had already naturally removed the ports from the docker-compose.yml when I did the proxy setup.
