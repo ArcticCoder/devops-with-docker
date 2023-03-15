@@ -1,3 +1,1 @@
-Command used:
-
 [devops@devops part1] touch text.log && docker run -v "$(pwd)/text.log:/usr/src/app/text.log" --rm devopsdockeruh/simple-web-service

@@ -1,10 +1,3 @@
-Dockerfile contentents:
-
-FROM devopsdockeruh/simple-web-service:alpine
-CMD server
-
-
-Command and output:
 [devops@devops part1]$ docker run --rm web-server
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 

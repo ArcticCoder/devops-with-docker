@@ -1,0 +1,2 @@
+docker run --rm -it -p 5000:5000 example-frontend:1.14
+docker run --rm -it -p 8080:8080 example-backend:1.14
