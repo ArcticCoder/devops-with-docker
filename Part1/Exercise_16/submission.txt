@@ -1,0 +1,4 @@
+I copied the example-frontend and deployed it to fly.io. I had to remove Dockerfile from .gitignore, and change the port to 8080, but otherwise everything was fine as-is.
+
+Note! Frontend only!
+[Link to app](https://crimson-water-4690.fly.dev/)
