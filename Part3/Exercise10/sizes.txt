@@ -1,2 +1,4 @@
+I used the spring-example-project from the material
+
 Before: 435MB
 After: 213MB
