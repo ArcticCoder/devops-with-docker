@@ -1,0 +1,2 @@
+Before: 435MB
+After: 213MB

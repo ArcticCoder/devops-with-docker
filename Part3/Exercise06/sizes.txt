@@ -1,0 +1,9 @@
+Before:
+Front - 1.26GB
+Back - 1.07GB
+
+After:
+Front - 1.26GB
+Back - 1.07GB 
+
+No visible difference at this scale.
